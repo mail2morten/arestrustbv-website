@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ares Trust B.V. | Officiële Bedrijfsgegevens</title>
+    
+    <!-- Google Fonts: Playfair Display for elegant headings, Lato for clean body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Feather Icons for minimalist vector icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Tailwind Configuration for Custom Luxury Colors & Fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        luxury: {
+                            dark: '#111315',
+                            gold: '#c5a059',
+                            goldhover: '#b08d48',
+                            light: '#f9f8f6',
+                            muted: '#888888'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Smooth scrolling and basic resets */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #f9f8f6;
+            color: #111315;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Subtle fade-in animation for elegant entrance */
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out forwards;
+            opacity: 0;
+        }
+        
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Luxury underline effect for links */
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+        }
+        .hover-underline-animation::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: #c5a059;
+            transform-origin: bottom right;
+            transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+        }
+        .hover-underline-animation:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /* Glassmorphism card effect */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="absolute w-full z-50 top-0 py-6 px-6 lg:px-12 flex justify-between items-center text-white fade-in">
+        <div class="text-2xl font-serif tracking-widest uppercase font-semibold">
+            Ares <span class="text-luxury-gold">Trust</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm tracking-widest uppercase">
+            <a href="#overzicht" class="hover-underline-animation transition-colors hover:text-luxury-gold">Overzicht</a>
+            <a href="#details" class="hover-underline-animation transition-colors hover:text-luxury-gold">Details</a>
+            <a href="#contact" class="hover-underline-animation transition-colors hover:text-luxury-gold">Contact</a>
+        </div>
+        <!-- Mobile Menu Icon (Visual Only) -->
+        <div class="md:hidden">
+            <i data-feather="menu" class="w-6 h-6 text-white hover:text-luxury-gold cursor-pointer transition"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Luxury Travel Style) -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image (Sophisticated Architecture/Abstract) -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" 
+                 alt="Luxury Corporate Background" 
+                 class="w-full h-full object-cover object-center transform scale-105 transition-transform duration-[20s] hover:scale-100" />
+            <!-- Dark Overlay for contrast -->
+            <div class="absolute inset-0 bg-luxury-dark/70"></div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center text-white px-4 fade-in" style="animation-delay: 0.3s;">
+            <p class="text-luxury-gold tracking-[0.3em] uppercase text-sm md:text-base mb-4 font-light">Besloten Vennootschap</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif mb-6 drop-shadow-lg">Ares Trust B.V.</h1>
+            <p class="max-w-2xl mx-auto text-lg md:text-xl font-light text-gray-200 mb-10 leading-relaxed">
+                Geregistreerd in Nederland. Betrouwbaarheid, stabiliteit en uitmuntendheid sinds de oprichting.
+            </p>
+            <a href="#details" class="inline-block border border-luxury-gold text-luxury-gold px-10 py-4 uppercase tracking-widest text-sm hover:bg-luxury-gold hover:text-white transition-all duration-300">
+                Bekijk Bedrijfsgegevens
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main id="details" class="py-24 px-6 lg:px-12 bg-luxury-light relative">
+        
+        <!-- Decorative subtle element -->
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-px h-16 bg-luxury-gold/50"></div>
+
+        <div class="max-w-6xl mx-auto mt-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif text-luxury-dark mb-4">Officiële Registratiegegevens</h2>
+                <p class="text-luxury-muted font-light max-w-xl mx-auto">Uitgebreide informatie en juridische details betreffende Ares Trust B.V., gedeponeerd in Nederland.</p>
+            </div>
+
+            <!-- Grid Layout for Information -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <!-- Card 1: Basisgegevens -->
+                <div class="glass-card p-10 lg:p-12 group hover:border-luxury-gold transition-colors duration-500">
+                    <div class="flex items-center mb-8">
+                        <i data-feather="briefcase" class="text-luxury-gold w-8 h-8 mr-4"></i>
+                        <h3 class="text-2xl font-serif text-luxury-dark">Basisgegevens</h3>
+                    </div>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex flex-col border-b border-gray-200 pb-4">
+                            <span class="text-xs uppercase tracking-widest text-luxury-muted mb-1">Eigenaar</span>
+                            <span class="text-lg font-medium text-luxury-dark">Morten Rasmussen</span>
+                        </li>
+                        <li class="flex flex-col border-b border-gray-200 pb-4">
+                            <span class="text-xs uppercase tracking-widest text-luxury-muted mb-1">Juridische Naam</span>
+                            <span class="text-lg text-luxury-dark">Ares Trust B.V.</span>
+                        </li>
+                        <li class="flex flex-col border-b border-gray-200 pb-4">
+                            <span class="text-xs uppercase tracking-widest text-luxury-muted mb-1">Rechtsvorm</span>
+                            <span class="text-lg text-luxury-dark">Besloten Vennootschap</span>
+                        </li>
+                        <li class="flex items-center justify-between border-b border-gray-200 pb-4">
+                            <div class="flex flex-col">
+                                <span class="text-xs uppercase tracking-widest text-luxury-muted mb-1">KvK-Nummer</span>
+                                <span class="text-lg text-luxury-dark">94879842</span>
+                            </div>
+                            <!-- Status Badge -->
+                            <div class="flex items-center space-x-2 bg-green-50 px-3 py-1 rounded-full border border-green-200">
+                                <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                                <span class="text-xs uppercase tracking-wider text-green-700 font-bold">Actief</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Locatie & Tijdlijn -->
+                <div class="glass-card p-10 lg:p-12 group hover:border-luxury-gold transition-colors duration-500">
+                    
+                    <!-- Adres Sectie -->
+                    <div class="mb-12">
+                        <div class="flex items-center mb-6">
+                            <i data-feather="map-pin" class="text-luxury-gold w-8 h-8 mr-4"></i>
+                            <h3 class="text-2xl font-serif text-luxury-dark">Geregistreerd Adres</h3>
+                        </div>
+                        <address class="not-italic text-lg text-luxury-dark leading-relaxed pl-12 border-l border-luxury-gold/30">
+                            Heer en Beekstraat 21<br>
+                            5242 AC Rosmalen<br>
+                            <span class="font-medium">Nederland</span>
+                        </address>
+                    </div>
+
+                    <!-- Tijdlijn Sectie -->
+                    <div>
+                        <div class="flex items-center mb-6">
+                            <i data-feather="calendar" class="text-luxury-gold w-8 h-8 mr-4"></i>
+                            <h3 class="text-2xl font-serif text-luxury-dark">Tijdlijn</h3>
+                        </div>
+                        <div class="pl-12 relative">
+                            <!-- Timeline node -->
+                            <div class="absolute left-[3px] top-2 w-2 h-2 rounded-full bg-luxury-gold"></div>
+                            <div class="absolute left-1 top-4 w-px h-full bg-luxury-gold/30"></div>
+                            
+                            <div class="flex flex-col pb-4">
+                                <span class="text-xs uppercase tracking-widest text-luxury-muted mb-1">Entiteit Oprichtingsdatum</span>
+                                <span class="text-lg text-luxury-dark">3 September 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-luxury-dark text-white py-16 px-6 border-t border-luxury-gold/20">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-8 md:mb-0 text-center md:text-left">
+                <div class="text-2xl font-serif tracking-widest uppercase font-semibold mb-2">
+                    Ares <span class="text-luxury-gold">Trust</span>
+                </div>
+                <p class="text-gray-400 font-light text-sm tracking-wide">
+                    KvK: 94879842 &bull; Nederland
+                </p>
+            </div>
+            
+            <div class="flex flex-col items-center md:items-end text-sm text-gray-400 font-light">
+                <p class="mb-2 uppercase tracking-widest">Officiële Registratie</p>
+                <p>&copy; 2024 Ares Trust B.V. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Icons -->
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
